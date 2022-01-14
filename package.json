@@ -1,0 +1,18 @@
+{
+  "name": "delivery-rest",
+  "version": "1.0.0",
+  "description": "Project created to obatin grade into Distributed System subject.",
+  "main": "src/server.js",
+  "author": "Beatriz Salles and Lucas Cleopas",
+  "license": "MIT",
+  "scripts": {
+    "server": "nodemon src/server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
