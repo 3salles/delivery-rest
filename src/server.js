@@ -100,7 +100,7 @@ app.post("/order", (req, res) => {
 
   for (let i = 0, size = products[`${category}`].length; i < size; i++) {
     if (products[`${category}`][i].id == id) {
-      item = {...products[`${category}`][i], category: category};
+      item = {...products[`${category}`][i]};
       console.log(item);
     }
   }
@@ -113,11 +113,11 @@ app.post("/order", (req, res) => {
 
 // Add address delivery
 app.post("/address", (req, res) => {
-  const { street, complement, neighborhood, cep, city, state } =
+  const { address, complement, neighborhood, cep, city, state } =
     req.body;
-  const address = `Rua ${street}, ${complement}, ${neighborhood}. ${city} - ${state}. CEP: ${cep}`;
+  const newAddress = `${address}, ${complement}, ${neighborhood}. ${city} - ${state}. CEP: ${cep}`;
 
-  cart.address = address;
+  cart.address = newAddress;
 
   res.send(JSON.stringify(cart.address));
 });
