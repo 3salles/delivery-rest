@@ -37,21 +37,21 @@ const products = {
   ],
   snacks: [
     {
-      id: 0,
+      id: 3,
     imageURL:
       "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=930&q=80",
     name: "Nikito",
     price: 2.00
     },
     {
-      id: 1,
+      id: 4,
     imageURL:
       "https://images.unsplash.com/photo-1499195333224-3ce974eecb47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1502&q=80",
     name: "Fini",
     price: 4.45
     },
     {
-      id: 2,
+      id: 5,
     imageURL:
       "https://images.unsplash.com/photo-1626697556651-67ebdcb8cbd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
     name: "Barra de Chocolate",
@@ -60,21 +60,21 @@ const products = {
   ],
   food: [
     {
-      id: 0,
+      id: 6,
     imageURL:
       "https://images.unsplash.com/photo-1596560548464-f010549b84d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
     name: "Arroz",
     price: 17.89
     },
     {
-      id: 1,
+      id: 7,
     imageURL:
       "https://images.unsplash.com/photo-1551462147-ff29053bfc14?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
     name: "Macarrão",
     price: 1.57
     },
     {
-      id: 2,
+      id: 8,
     imageURL:
       "https://images.unsplash.com/photo-1612257416648-ee7a6c533b4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1193&q=80",
     name: "Feijão",
@@ -108,14 +108,14 @@ app.post("/order", (req, res) => {
   let value = parseFloat(item.price);
   //console.log(valor)
   cart.total = cart.total + value;
-  res.send(JSON.stringify(cart));
+  res.send(JSON.stringify(item));
 });
 
 // Add address delivery
 app.post("/address", (req, res) => {
-  const { street, number, complement, neighborhood, cep, city, state } =
+  const { street, complement, neighborhood, cep, city, state } =
     req.body;
-  const address = `Rua ${street}, ${number}, ${complement}, ${neighborhood}. ${city} - ${state}. CEP: ${cep}`;
+  const address = `Rua ${street}, ${complement}, ${neighborhood}. ${city} - ${state}. CEP: ${cep}`;
 
   cart.address = address;
 
