@@ -2,6 +2,8 @@
 const express = require("express");
 const app = express();
 const porta = process.env.PORT || 3333;
+const distDir = __dirname + "/dist/";
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use((req, res, next) => {
@@ -10,6 +12,10 @@ app.use((req, res, next) => {
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
   next();
 });
+
+
+
+app.use(express.static(distDir))
 
 const products = {
   drinks: [
