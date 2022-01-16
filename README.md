@@ -88,22 +88,67 @@ Podendo ser visto em deploy no seguinte link: .
   ```json
 
   {
-    "drinks":[
-      {"id":0,"item":"Água","price":"1.90"},
-      {"id":1,"item":"Chá","price":"6.90"},
-      {"id":2,"item":"Café","price":"14.90"}
-    ],
-    "snacks":[
-      {"id":0,"item":"Nikito","price":"2.00"},
-      {"id":1,"item":"Fini","price":"4.45"},
-      {"id":2,"item":"Barra de Chocolate","price":"5.00"}
-    ],
-    "food":[
-      {"id":0,"item":"Arroz","price":"17.89"},
-      {"id":1,"item":"Macarrão","price":"1.57"},
-      {"id":2,"item":"Feijão","price":"6.90"}
-    ]
-  }
+	"drinks": [
+		{
+			"id": 0,
+			"imageURL": "https://images.unsplash.com/photo-1594631252845-29fc4cc8cde9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+			"name": "Chá",
+			"price": 6.9
+		},
+		{
+			"id": 1,
+			"imageURL": "https://images.unsplash.com/photo-1641327512258-375610e81f86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+			"name": "Café",
+			"price": 14.9
+		},
+		{
+			"id": 2,
+			"imageURL": "https://images.unsplash.com/photo-1595641190867-138b14a23a7a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=694&q=80",
+			"name": "Achocolatado",
+			"price": 13.62
+		}
+	],
+	"snacks": [
+		{
+			"id": 0,
+			"imageURL": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=930&q=80",
+			"name": "Nikito",
+			"price": 2
+		},
+		{
+			"id": 1,
+			"imageURL": "https://images.unsplash.com/photo-1499195333224-3ce974eecb47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1502&q=80",
+			"name": "Fini",
+			"price": 4.45
+		},
+		{
+			"id": 2,
+			"imageURL": "https://images.unsplash.com/photo-1626697556651-67ebdcb8cbd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+			"name": "Barra de Chocolate",
+			"price": 5
+		}
+	],
+	"food": [
+		{
+			"id": 0,
+			"imageURL": "https://images.unsplash.com/photo-1596560548464-f010549b84d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+			"name": "Arroz",
+			"price": 17.89
+		},
+		{
+			"id": 1,
+			"imageURL": "https://images.unsplash.com/photo-1551462147-ff29053bfc14?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+			"name": "Macarrão",
+			"price": 1.57
+		},
+		{
+			"id": 2,
+			"imageURL": "https://images.unsplash.com/photo-1612257416648-ee7a6c533b4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1193&q=80",
+			"name": "Feijão",
+			"price": 6.9
+		}
+	]
+}
   ```
 
 - Fazer um pedido
@@ -126,11 +171,16 @@ Podendo ser visto em deploy no seguinte link: .
   ```json
 
   {
-    "orders":[
-      {"id":0,"item":"Arroz","price":"17.89"}
-    ],
-    "total":17.89
-  }
+	"orders": [
+		{
+			"id": 0,
+			"imageURL": "https://images.unsplash.com/photo-1596560548464-f010549b84d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+			"name": "Arroz",
+			"price": 17.89
+		}
+	],
+	"total": 17.89
+}
 
   ```
 
@@ -169,12 +219,17 @@ Podendo ser visto em deploy no seguinte link: .
   ```json
 
   {
-    "orders":[
-      {"id":0,"item":"Arroz","price":"17.89"}
-    ],
-    "total":17.89,
-    "address":"Rua H, 03, bloco D, Araçagi. Raposa - MA. CEP: 65138-000"
-  }
+	"orders": [
+		{
+			"id": 0,
+			"imageURL": "https://images.unsplash.com/photo-1596560548464-f010549b84d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+			"name": "Arroz",
+			"price": 17.89
+		}
+	],
+	"total": 17.89,
+	"address": "Rua H, 03, bloco D, Araçagi. Raposa - MA. CEP: 65138-000"
+}
 
   ```
 
@@ -189,21 +244,61 @@ Podendo ser visto em deploy no seguinte link: .
   ```json
 
   {
-    "drinks":[
-      {"id":0,"item":"Água","price":"1.90"},
-      {"id":1,"item":"Chá","price":"6.90"},
-      {"id":2,"item":"Café","price":"14.90"}
-    ],
-    "snacks":[
-      {"id":0,"item":"Nikito","price":"2.00"},
-      {"id":1,"item":"Fini","price":"4.45"},
-      {"id":2,"item":"Barra de Chocolate","price":"5.00"}
-    ],
-    "food":[
-      {"id":0,"item":"Arroz","price":"17.89"},
-      {"id":1,"item":"Macarrão","price":"1.57"},{"id":2,"item":"Feijão","price":"6.90"}
-    ]
-  }
+	"drinks": [
+		{
+			"id": 0,
+			"imageURL": "https://images.unsplash.com/photo-1594631252845-29fc4cc8cde9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+			"name": "Chá",
+			"price": 6.9
+		},
+		{
+			"id": 1,
+			"imageURL": "https://images.unsplash.com/photo-1641327512258-375610e81f86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+			"name": "Café",
+			"price": 14.9
+		}
+	],
+	"snacks": [
+		{
+			"id": 0,
+			"imageURL": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=930&q=80",
+			"name": "Nikito",
+			"price": 2
+		},
+		{
+			"id": 1,
+			"imageURL": "https://images.unsplash.com/photo-1499195333224-3ce974eecb47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1502&q=80",
+			"name": "Fini",
+			"price": 4.45
+		},
+		{
+			"id": 2,
+			"imageURL": "https://images.unsplash.com/photo-1626697556651-67ebdcb8cbd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+			"name": "Barra de Chocolate",
+			"price": 5
+		}
+	],
+	"food": [
+		{
+			"id": 0,
+			"imageURL": "https://images.unsplash.com/photo-1596560548464-f010549b84d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+			"name": "Arroz",
+			"price": 17.89
+		},
+		{
+			"id": 1,
+			"imageURL": "https://images.unsplash.com/photo-1551462147-ff29053bfc14?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+			"name": "Macarrão",
+			"price": 1.57
+		},
+		{
+			"id": 2,
+			"imageURL": "https://images.unsplash.com/photo-1612257416648-ee7a6c533b4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1193&q=80",
+			"name": "Feijão",
+			"price": 6.9
+		}
+	]
+}
 
   ```
 
