@@ -6,7 +6,9 @@
   "author": "Beatriz Salles and Lucas Cleopas",
   "license": "MIT",
   "scripts": {
-    "server": "nodemon src/server.js"
+    "start": "node src/server.js",
+    "server": "nodemon src/server.js",
+    "web": "node src/server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
