@@ -75,8 +75,7 @@ $ yarn server
 
 A aplicação funcionará em `http://localhost:3333`.
 
-Podendo ser visto em deploy no seguinte link: .
-
+Podendo ser visto em deploy no seguinte link: [https://market-sd.herokuapp.com](https://market-sd.herokuapp.com).
 ## :bookmark_tabs: Documentação
 
 - Listar produtos
